@@ -20,8 +20,6 @@ app.get('/blog/{id}/{comment_id}')
 def get_comment(id: int, comment_id: int, valid: bool = True, username: Optional [str] = None):
     return { 'message' : f'blog_id {id}, comment_id {comment_id}, valid {valid}, username {username}'}
 
-
-
 class BlogType(str, Enum):
     short = 'short'
     story = 'story'
